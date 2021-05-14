@@ -1,0 +1,495 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>청해진 6기 웹 개발 테스트</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <style>
+            .div_nav {
+                border: 1px solid rgba(247,24,124,0.3); 
+                float: left; 
+                width: 19%;
+            }
+            .little_margin{
+                margin:0px 8%;
+            }
+
+            #item{
+            border-top: 5px dotted gray;
+            border-bottom: 5px dotted gray;
+            padding: 30px 20px;
+            
+            }
+
+            h3{
+
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 50%;
+            }
+
+            body{
+                background-image: url(bookstore.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+
+            #listA{
+                size: 30px;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            #sel{
+                padding-right: 20px;
+            }
+
+            .table_check{
+                padding-left: 50px;
+                width: 50%;
+                height: 10%;
+            }
+
+            .form-check{
+                padding-left: 50px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+
+           
+         
+            
+
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="book.png"  width="50" height="50"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index_test.html">Instagram</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="test_link_2.html">Webtoon</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="test_link_3.html">Language</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="test_link_4.html">Bookstore</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="test_link_5.html">Store</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cusmtomer
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Q&A</a></li>
+                      <li><a class="dropdown-item" href="#">Complaint</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">lost property</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+        <!--<div align="center">
+            <a href="index_test.html">
+            <img src="book.png" width="200" height="120"></a>
+        </div>
+        <div align="center" class="little_margin">
+            <div class="div_nav" align="center">
+                <a href="test_link_1.html">link1</a>
+            </div>
+            <div class="div_nav" align="center">
+                <a href="test_link_2.html">link2</a>
+            </div>
+            <div class="div_nav" align="center">
+                <a href="test_link_3.html">link3</a>
+            </div>
+            <div class="div_nav" align="center">
+                <a href="test_link_4.html">BookStore</a>
+            </div>
+        </div>
+        <div class="div_nav" align="center">
+            <a href="test_link_5.html">link5</a>
+        </div>
+        <br>
+        <br>-->
+        <br>
+        
+        <div align="left">
+
+            <table class="table-primary">프로그램</table>
+                <tr>
+                <td class="table-primary">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div></td>
+
+                <td class="table-secondary">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div></td>
+
+                <td class="table-success">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div></td>
+
+                <td class="table-danger">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div></td>
+                </tr>
+
+            <table class="table-secondary">프로그램</table>
+                <tr>
+                <td class="table-primary">프로</td>
+                <td class="table-secondary">프로</td>
+                <td class="table-success">프로</td>
+                <td class="table-danger">프로</td>
+                </tr>
+
+            <table class="table-success">프로그램</table>
+                <tr>
+                <td class="table-primary">프로</td>
+                <td class="table-secondary">프로</td>
+                <td class="table-success">프로</td>
+                <td class="table-danger">프로</td>
+                </tr>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+          
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+              </div>
+                
+            <!--<table class = "table_check">
+               
+                <ul id="sel">
+                 <tr>
+
+                    <td><li>
+                        <input type="checkbox" id="python" value="python">
+                        <label for="python">Python</label>
+                    </li></td>
+
+                    <td><li>
+                        <input type="checkbox" id="python" value="python">
+                        <label for="python">Java</label>
+                    </li></td>
+
+                    <td><li>
+                        <input type="checkbox" id="python" value="python">
+                        <label for="python">PHP</label>
+                    </li></td>
+
+                    <td><li>
+                        <input type="checkbox" id="python" value="python">
+                        <label for="python">C</label>
+                    </li></td>
+
+                    <td><li>
+                        <input type="checkbox" id="python" value="python">
+                        <label for="python">C#</label>
+                    </li></td>
+                    </tr>
+
+                    <tr>
+
+                        <td><li>
+                            <input type="checkbox" id="python" value="python">
+                            <label for="python">C++</label>
+                        </li></td>
+    
+                        <td><li>
+                            <input type="checkbox" id="python" value="python">
+                            <label for="python">JavaScript</label>
+                        </li></td>
+    
+                        <td><li>
+                            <input type="checkbox" id="python" value="python">
+                            <label for="python">프로그래밍 교육</label>
+                        </li></td>
+    
+                        <td><li>
+                            <input type="checkbox" id="python" value="python">
+                            <label for="python">ASP</label>
+                        </li></td>
+    
+                        <td><li>
+                            <input type="checkbox" id="python" value="python">
+                            <label for="python">JSP</label>
+                        </li></td>
+                        </tr>
+
+                        <tr>
+
+                            <td><li>
+                                <input type="checkbox" id="python" value="python">
+                                <label for="python">델파이</label>
+                            </li></td>
+        
+                            <td><li>
+                                <input type="checkbox" id="python" value="python">
+                                <label for="python">Ruby</label>
+                            </li></td>
+        
+                            <td><li>
+                                <input type="checkbox" id="python" value="python">
+                                <label for="python">XML</label>
+                            </li></td>
+        
+                            <td><li>
+                                <input type="checkbox" id="python" value="python">
+                                <label for="python">Ajax</label>
+                            </li></td>
+        
+                            <td><li>
+                                <input type="checkbox" id="python" value="python">
+                                <label for="python">.NET</label>
+                            </li></td>
+                            </tr>-->
+                </ul>
+            </table>
+        </fieldset>
+    
+        <h1>Python</h1>
+
+        <div id="listA" align = "right">  
+            <label for="buy">분야별</label>
+            <select>
+                <option selected>항목</option>
+                <option value="1">기본순</option>
+                <option value="1">판매량순</option>
+                <option value="1">최저가순</option>
+                <option value="1">최고가순</option>
+            </select>
+        </div>
+
+
+        
+
+        <div id ="item" align = "left">   
+            <table>
+                <tr>
+                    <th>
+                    
+                    <p><a href="http://www.yes24.com/Product/Goods/74419916" 
+title= 
+"문과생도 중고등학생도 직장인도 프로그래밍에 눈뜨게 
+만든 바로 그 책이 전면 개정판으로 새로 태어났다! 
+2016년 《Do it! 점프 투 파이썬》으로 출간되었던 
+이 책은 약 4년 동안의 피드백을 반영하여 초보자가 
+더 빠르게 입문하고, 더 깊이 있게 공부할 수 있도록 
+개정되었다.">
+                    <img src="pbook.png"  width="250" height="300" ></p></a>
+                    </th>
+
+                    <th>
+                        <h3><p>제목: 점프 투 파이썬 </p></h3>
+                        <h3><p>저자: 박용우 </p></h3>
+                        <h3><p>가격: 13,000원 </p></h3>
+                    </th>
+
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/74269975"
+title= 
+"혼자 해도 충분하다! 1:1 과외하듯 배우는 파이썬 
+프로그래밍 자습서(파이썬 최신 버전 반영)이 책은 
+독학으로 프로그래밍 언어를 처음 배우려는 입문자가, 
+혹은 파이썬을 배우려는 입문자가 ‘꼭 필요한 내용을 
+제대로’ 학습할 수 있도록 구성했다.">
+
+                         
+                        <img src="pbook2.png" width="250" height="300" ></a>
+                    </th>
+    
+                    <th>
+                        <h3><p>제목: 혼자 공부하는 파이썬 </p></h3>
+                        <h3><p>저자: 윤인성 </p></h3>
+                        <h3><p>가격: 16,200원 </p></h3>
+                    </th>
+
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/91433923"
+title= 
+"IT 취준생이라면 누구나 입사하고 싶은 카카오 · 삼성전자 
+· 네이버 · 라인!취업의 성공 열쇠는 알고리즘 인터뷰에 있다!
+IT 취준생이라면 누구나 가고 싶어 하는 카카오, 라인, 삼성전자의 
+2016년부터 2020년까지의 코딩 테스트와 알고리즘 대회의 기출문제를 
+엄선하여 수록했다. "                        
+>
+                        <img src="pbook3.png" width="250" height="300" ></a>
+                    </th>
+    
+                    <th>
+                        <h3><p>제목: 이것이 코딩 테스트이다. </p></h3>
+                        <h3><p>저자: 나동빈 </p></h3>
+                        <h3><p>가격: 30,600원 </p></h3>
+                    </th>
+
+                </tr>
+             </table>
+        </div><br>
+        
+
+
+        <h1>Java</h1>
+            
+        <div id ="item" align = "left">   
+            <table>
+                <tr>
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/74269939"
+title= 
+"이 책은 독학으로 자바를 배우는 입문자가 ‘꼭 필요한 내용을 
+제대로’ 학습할 수 있도록 구성했다. ‘무엇을’ ‘어떻게’ 학습해야 
+할지 조차 모르는 입문자의 막연한 마음을 살펴, 과외 선생님이 
+알려주듯 친절하게, 그러나 핵심적인 내용만 콕콕 집어준다. ">
+                        <img src="jbook1.png" width="250" height="300" ></a>
+                    </th>
+
+                    <th>
+                        <h3><p>제목: 혼자 공부하는 자바 </p></h3>
+                        <h3><p>저자: 신용권 </p></h3>
+                        <h3><p>가격: 31,600원 </p></h3>
+                    </th>
+
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/82958861"
+title= 
+"국내 최초 ‘문과식’ 코딩 입문서!99가지 비유와 그림, 무료 온라인 
+실습으로 ‘코딩 까막눈’ 탈출!코딩이 막막한 보통 사람들을 위해 태어난 책! 
+초등 고학년부터 대학생, 어르신까지 남녀노소 누구나 ‘코딩할 줄 아는 사람’이 
+되도록 도와주는 책이다.">
+                        <img src="jbook2.png" width="250" height="300" ></a>
+                    </th>
+    
+                    <th>
+                        <h3><p>제목: 첫 코딩 </p></h3>
+                        <h3><p>저자: 정동균 </p></h3>
+                        <h3><p>가격: 12,600원 </p></h3>
+                    </th>
+
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/24259565"
+title= 
+"최근 7년동안 자바 분야의 베스트 셀러 1위를 지켜온 '자바의 정석'의 최신판. 
+저자가 카페에서 12년간 직접 독자들에게 답변을 해오면서 초보자가 어려워하는 
+부분을 잘 파악하고 쓴 책. 뿐만 아니라 기존의 경력자들을 위해 자바의 최신기능
+(람다와 스트림)을 자세하면서도 깊이있게 설명하고 있다. ">
+                        <img src="jbook3.png" width="250" height="300" ></a>
+                    </th>
+    
+                    <th>
+                        <h3><p>제목: java의 정석 </p></h3>
+                        <h3><p>저자: 남궁성 </p></h3>
+                        <h3><p>가격: 27,000원 </p></h3>
+                    </th>
+
+                </tr>
+             </table>
+        </div><br>
+
+
+        <h1>PHP</h1>
+            
+        <div id ="item" align = "left">   
+            <table>
+                <tr>
+                    <th>
+                    
+                    <a href="http://www.yes24.com/Product/Goods/90118480"
+title= 
+"이 책은 실무에서 바로 적용 가능한 80여 가지 다양한 실습 예제를 
+수록하여 현업에서 이뤄지고 있는 데이터베이스 개발과 운영을 모두 
+체험할 수 있게 구성하였다. 또 어려운 실습도 쉽게 익힐 수 있도록 
+40여 개의 [저자 동영상 강의]를 무료로 제공하고 있다.">
+                    <img src="hbook1.png" width="250" height="300" ></a>
+                    </th>
+
+                    <th>
+                        <h3><p>제목: 이것이 MY SQL이다. </p></h3>
+                        <h3><p>저자: 우재남 </p></h3>
+                        <h3><p>가격: 28,800원 </p></h3>
+                    </th>
+
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/73374769"
+title= 
+"실습 예제로 다지는 PHP 웹 프로그래밍 기술다양하고 쉬운 실습 예제를 
+통해 PHP 프로그래밍 문법과 MySQL 데이터베이스 명령을 자연스럽게 익히고 
+Apache, MySQL 간의 흐름을 파악할 수 있다. ">
+                        <img src="hbook2.png" width="250" height="300" ></a>
+                    </th>
+    
+                    <th>
+                        <h3><p>제목: PHP프로그래밍 인문 </p></h3>
+                        <h3><p>저자: 황재호 </p></h3>
+                        <h3><p>가격: 25,000원 </p></h3>
+                    </th>
+
+                    <th>
+                        <a href="http://www.yes24.com/Product/Goods/95757831"
+title= 
+"이 책은 라라벨을 제대로 활용하기 위해 탄탄한 기본기를 갖추고, 
+다양한 기능과 도구를 제대로 활용하려는 독자를 위한 실전 바이블이다. 
+웹 애플리케이션 개발 과정을 시간 순서대로 따라가며 필요한 개념을 
+알기 쉽게 설명하고, 구체적인 사례를 제시해 실무에 적용할 수 있게 
+돕는다. ">
+                        <img src="hbook3.png" width="250" height="300" ></a>
+                    </th>
+    
+                    <th>
+                        <h3><p>제목: Laravel </p></h3>
+                        <h3<p>저자: 맷 스타우퍼 </p></h3>
+                        <h3><p>가격: 43,200원 </p></h3>
+                    </th>
+
+                </tr>
+             </table>
+        </div><br>
+
+
+    </body>
+</html>
